@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Preparation Guide - NomadWander</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>NomadWander</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="route-planner.html" class="nav-link">Plan Route</a></li>
+                <li class="nav-item"><a href="hidden-destinations.html" class="nav-link">Hidden Gems</a></li>
+                <li class="nav-item"><a href="local-insights.html" class="nav-link">Local Insights</a></li>
+                <li class="nav-item"><a href="vehicle-prep.html" class="nav-link active">Vehicle Prep</a></li>
+                <li class="nav-item"><a href="ev-stations.html" class="nav-link">EV Stations</a></li>
+                <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-tools"></i> Vehicle Preparation Guide</h1>
+            <p>Complete preparation checklists for cars, motorbikes, and electric vehicles</p>
+        </div>
+    </section>
+
+    <!-- Vehicle Preparation Section -->
+    <section class="section">
+        <div class="container">
+            <div class="vehicle-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="car">Personal Car</button>
+                    <button class="tab-btn" data-tab="bike">Motorbike</button>
+                    <button class="tab-btn" data-tab="ev">Electric Vehicle</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="car-tab">
+                        <div class="checklist-grid">
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-tools"></i> Pre-Trip Checklist</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Check tire pressure and tread</li>
+                                    <li><input type="checkbox"> Engine oil level and quality</li>
+                                    <li><input type="checkbox"> Brake fluid and brake pads</li>
+                                    <li><input type="checkbox"> Coolant level</li>
+                                    <li><input type="checkbox"> Battery terminals and charge</li>
+                                    <li><input type="checkbox"> Lights and indicators</li>
+                                    <li><input type="checkbox"> Windshield wipers</li>
+                                    <li><input type="checkbox"> Air filter condition</li>
+                                    <li><input type="checkbox"> Fuel system check</li>
+                                    <li><input type="checkbox"> Steering and suspension</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-first-aid"></i> Emergency Kit</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Spare tire and jack</li>
+                                    <li><input type="checkbox"> Jumper cables</li>
+                                    <li><input type="checkbox"> Basic tool kit</li>
+                                    <li><input type="checkbox"> Emergency contact numbers</li>
+                                    <li><input type="checkbox"> First aid kit</li>
+                                    <li><input type="checkbox"> Flashlight and batteries</li>
+                                    <li><input type="checkbox"> Emergency water and snacks</li>
+                                    <li><input type="checkbox"> Warning triangles</li>
+                                    <li><input type="checkbox"> Fire extinguisher</li>
+                                    <li><input type="checkbox"> Multi-tool or Swiss knife</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="bike-tab">
+                        <div class="checklist-grid">
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-motorcycle"></i> Pre-Trip Checklist</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Tire pressure and condition</li>
+                                    <li><input type="checkbox"> Chain tension and lubrication</li>
+                                    <li><input type="checkbox"> Brake pads and fluid</li>
+                                    <li><input type="checkbox"> Engine oil level</li>
+                                    <li><input type="checkbox"> Battery charge</li>
+                                    <li><input type="checkbox"> Lights and horn</li>
+                                    <li><input type="checkbox"> Clutch and throttle cables</li>
+                                    <li><input type="checkbox"> Air filter cleaning</li>
+                                    <li><input type="checkbox"> Spark plug condition</li>
+                                    <li><input type="checkbox"> Suspension settings</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-wrench"></i> Spare Parts & Gear</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Spare spark plug</li>
+                                    <li><input type="checkbox"> Fuses</li>
+                                    <li><input type="checkbox"> Chain master link</li>
+                                    <li><input type="checkbox"> Tire repair kit</li>
+                                    <li><input type="checkbox"> Basic tools</li>
+                                    <li><input type="checkbox"> Emergency contact numbers</li>
+                                    <li><input type="checkbox"> Rain gear</li>
+                                    <li><input type="checkbox"> Helmet and protective gear</li>
+                                    <li><input type="checkbox"> Bungee cords</li>
+                                    <li><input type="checkbox"> Engine oil (small bottle)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="ev-tab">
+                        <div class="checklist-grid">
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-battery-full"></i> Pre-Trip Checklist</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Battery health and charge level</li>
+                                    <li><input type="checkbox"> Charging cables and adapters</li>
+                                    <li><input type="checkbox"> Tire pressure</li>
+                                    <li><input type="checkbox"> Brake fluid (regenerative brakes)</li>
+                                    <li><input type="checkbox"> Coolant for battery system</li>
+                                    <li><input type="checkbox"> 12V auxiliary battery</li>
+                                    <li><input type="checkbox"> Software updates</li>
+                                    <li><input type="checkbox"> Cabin air filter</li>
+                                    <li><input type="checkbox"> Windshield washer fluid</li>
+                                    <li><input type="checkbox"> Emergency charging equipment</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-section">
+                                <h3><i class="fas fa-charging-station"></i> Range Planning</h3>
+                                <ul class="checklist">
+                                    <li><input type="checkbox"> Plan charging stops</li>
+                                    <li><input type="checkbox"> Download charging apps</li>
+                                    <li><input type="checkbox"> Check weather impact on range</li>
+                                    <li><input type="checkbox"> Emergency charging options</li>
+                                    <li><input type="checkbox"> Backup transportation plan</li>
+                                    <li><input type="checkbox"> Portable charger (if available)</li>
+                                    <li><input type="checkbox"> Emergency contact numbers</li>
+                                    <li><input type="checkbox"> Route optimization for efficiency</li>
+                                    <li><input type="checkbox"> Climate control settings</li>
+                                    <li><input type="checkbox"> Charging network memberships</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakdown Guide -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="breakdown-guide">
+                <h2><i class="fas fa-exclamation-triangle"></i> What to Do During a Breakdown</h2>
+                <div class="breakdown-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Safety First</h4>
+                            <p>Move to a safe location, turn on hazard lights, and set up warning triangles</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Assess the Problem</h4>
+                            <p>Check for obvious issues: flat tire, overheating, strange noises</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Call for Help</h4>
+                            <p>Contact roadside assistance, local mechanics, or emergency services</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Stay Safe</h4>
+                            <p>Wait in a safe location away from traffic until help arrives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance Tips -->
+    <section class="section">
+        <div class="container">
+            <h2>Regular Maintenance Tips</h2>
+            <div class="maintenance-grid">
+                <div class="maintenance-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Weekly Checks</h3>
+                    <ul>
+                        <li>Tire pressure and visual inspection</li>
+                        <li>Fluid levels (oil, coolant, brake)</li>
+                        <li>Lights and indicators</li>
+                        <li>Battery terminals</li>
+                    </ul>
+                </div>
+                <div class="maintenance-card">
+                    <i class="fas fa-calendar-week"></i>
+                    <h3>Monthly Checks</h3>
+                    <ul>
+                        <li>Engine oil quality</li>
+                        <li>Air filter condition</li>
+                        <li>Windshield wipers</li>
+                        <li>Emergency kit inventory</li>
+                    </ul>
+                </div>
+                <div class="maintenance-card">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Seasonal Checks</h3>
+                    <ul>
+                        <li>Comprehensive vehicle inspection</li>
+                        <li>Tire rotation and alignment</li>
+                        <li>AC/Heating system</li>
+                        <li>Professional service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2>Emergency Contacts</h2>
+            <div class="emergency-contacts">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>National Emergency</h3>
+                    <p class="contact-number">112</p>
+                    <p>All-in-one emergency number</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-car-crash"></i>
+                    <h3>Road Accident</h3>
+                    <p class="contact-number">1073</p>
+                    <p>Traffic police helpline</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Roadside Assistance</h3>
+                    <p class="contact-number">1800-XXX-XXXX</p>
+                    <p>24/7 breakdown service</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Medical Emergency</h3>
+                    <p class="contact-number">108</p>
+                    <p>Ambulance service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-route"></i>
+                        <span>NomadWander</span>
+                    </div>
+                    <p>Discover the unexplored paths and hidden gems of India with our comprehensive travel companion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="route-planner.html">Plan Route</a></li>
+                        <li><a href="hidden-destinations.html">Hidden Gems</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NomadWander. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

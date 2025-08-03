@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Stations - NomadWander</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>NomadWander</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="route-planner.html" class="nav-link">Plan Route</a></li>
+                <li class="nav-item"><a href="hidden-destinations.html" class="nav-link">Hidden Gems</a></li>
+                <li class="nav-item"><a href="local-insights.html" class="nav-link">Local Insights</a></li>
+                <li class="nav-item"><a href="vehicle-prep.html" class="nav-link">Vehicle Prep</a></li>
+                <li class="nav-item"><a href="ev-stations.html" class="nav-link active">EV Stations</a></li>
+                <li class="nav-item"><a href="community.html" class="nav-link">Community</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-charging-station"></i> EV Charging Stations</h1>
+            <p>Find charging stations along your route with real-time availability</p>
+        </div>
+    </section>
+
+    <!-- EV Charging Stations Section -->
+    <section class="section">
+        <div class="container">
+            <div class="charging-content">
+                <div class="charging-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Charging Station Map</p>
+                        <small>Real-time availability and station details</small>
+                    </div>
+                </div>
+                <div class="charging-filters">
+                    <h3>Filter Stations</h3>
+                    <div class="filter-group">
+                        <label>Charging Speed</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Fast Charging (50kW+)</label>
+                            <label><input type="checkbox" checked> Standard (22kW)</label>
+                            <label><input type="checkbox" checked> Slow (7kW)</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Connector Type</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> CCS</label>
+                            <label><input type="checkbox" checked> CHAdeMO</label>
+                            <label><input type="checkbox" checked> Type 2</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Amenities</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Restaurant</label>
+                            <label><input type="checkbox"> Restroom</label>
+                            <label><input type="checkbox"> WiFi</label>
+                            <label><input type="checkbox"> Shopping</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Network Provider</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Tata Power</label>
+                            <label><input type="checkbox" checked> IOCL</label>
+                            <label><input type="checkbox" checked> Ather Grid</label>
+                            <label><input type="checkbox" checked> ChargeZone</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charging Stations List -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="charging-stations-list">
+                <h2>Stations on Popular Routes</h2>
+                
+                <div class="station-card">
+                    <div class="station-info">
+                        <h4>IOCL Charging Station - Ghaziabad</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> NH-24, Ghaziabad, UP</p>
+                        <div class="station-details">
+                            <span class="detail"><i class="fas fa-bolt"></i> 50kW Fast Charging</span>
+                            <span class="detail"><i class="fas fa-plug"></i> CCS, CHAdeMO</span>
+                            <span class="detail"><i class="fas fa-clock"></i> 24/7 Open</span>
+                        </div>
+                        <div class="station-amenities">
+                            <span class="amenity"><i class="fas fa-utensils"></i> Restaurant</span>
+                            <span class="amenity"><i class="fas fa-restroom"></i> Restroom</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i> WiFi</span>
+                        </div>
+                    </div>
+                    <div class="station-status">
+                        <div class="availability available">Available</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.2
+                        </div>
+                        <div class="pricing">₹12/kWh</div>
+                    </div>
+                </div>
+                
+                <div class="station-card">
+                    <div class="station-info">
+                        <h4>Tata Power Station - Moradabad</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi-Nainital Highway, Moradabad</p>
+                        <div class="station-details">
+                            <span class="detail"><i class="fas fa-bolt"></i> 60kW Fast Charging</span>
+                            <span class="detail"><i class="fas fa-plug"></i> CCS, Type 2</span>
+                            <span class="detail"><i class="fas fa-clock"></i> 6 AM - 10 PM</span>
+                        </div>
+                        <div class="station-amenities">
+                            <span class="amenity"><i class="fas fa-utensils"></i> Restaurant</span>
+                            <span class="amenity"><i class="fas fa-shopping-cart"></i> Shopping</span>
+                        </div>
+                    </div>
+                    <div class="station-status">
+                        <div class="availability busy">2/4 Available</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.5
+                        </div>
+                        <div class="pricing">₹10/kWh</div>
+                    </div>
+                </div>
+                
+                <div class="station-card">
+                    <div class="station-info">
+                        <h4>Ather Grid - Haldwani</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Rampur Road, Haldwani, Uttarakhand</p>
+                        <div class="station-details">
+                            <span class="detail"><i class="fas fa-bolt"></i> 30kW Fast Charging</span>
+                            <span class="detail"><i class="fas fa-plug"></i> CCS, Type 2</span>
+                            <span class="detail"><i class="fas fa-clock"></i> 24/7 Open</span>
+                        </div>
+                        <div class="station-amenities">
+                            <span class="amenity"><i class="fas fa-coffee"></i> Cafe</span>
+                            <span class="amenity"><i class="fas fa-restroom"></i> Restroom</span>
+                        </div>
+                    </div>
+                    <div class="station-status">
+                        <div class="availability available">Available</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.7
+                        </div>
+                        <div class="pricing">₹8/kWh</div>
+                    </div>
+                </div>
+                
+                <div class="station-card">
+                    <div class="station-info">
+                        <h4>ChargeZone - Nainital</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Mall Road, Nainital, Uttarakhand</p>
+                        <div class="station-details">
+                            <span class="detail"><i class="fas fa-bolt"></i> 22kW Standard</span>
+                            <span class="detail"><i class="fas fa-plug"></i> Type 2</span>
+                            <span class="detail"><i class="fas fa-clock"></i> 8 AM - 8 PM</span>
+                        </div>
+                        <div class="station-amenities">
+                            <span class="amenity"><i class="fas fa-shopping-bag"></i> Shopping</span>
+                            <span class="amenity"><i class="fas fa-parking"></i> Parking</span>
+                        </div>
+                    </div>
+                    <div class="station-status">
+                        <div class="availability available">Available</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.0
+                        </div>
+                        <div class="pricing">₹15/kWh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charging Tips -->
+    <section class="section">
+        <div class="container">
+            <h2>EV Charging Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-route"></i>
+                    <h3>Plan Your Route</h3>
+                    <p>Always plan charging stops before starting your journey. Keep backup options in case your primary station is occupied.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Use Charging Apps</h3>
+                    <p>Download multiple charging network apps to check real-time availability and book slots in advance.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Weather Considerations</h3>
+                    <p>Cold weather can reduce battery range by 20-40%. Plan for additional charging stops during winter trips.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-battery-three-quarters"></i>
+                    <h3>Optimal Charging</h3>
+                    <p>Charge between 20-80% for fastest speeds. Avoid charging to 100% unless necessary for long distances.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Payment Methods</h3>
+                    <p>Keep multiple payment options ready - apps, RFID cards, and contactless payments for different networks.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Carry Adapters</h3>
+                    <p>Bring necessary charging adapters and cables. Some stations may not have the connector type for your vehicle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charging Networks -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2>Major Charging Networks in India</h2>
+            <div class="networks-grid">
+                <div class="network-card">
+                    <div class="network-logo">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Tata Power</h3>
+                    <p>One of India's largest charging networks with over 5,000+ charging points across highways and cities.</p>
+                    <div class="network-stats">
+                        <span>5,000+ Stations</span>
+                        <span>Fast & Standard Charging</span>
+                    </div>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <h3>IOCL</h3>
+                    <p>Indian Oil's charging network at fuel stations, providing convenient charging during fuel stops.</p>
+                    <div class="network-stats">
+                        <span>2,000+ Stations</span>
+                        <span>Highway Focus</span>
+                    </div>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Ather Grid</h3>
+                    <p>Fast-growing network focused on urban areas and popular routes, known for reliable fast charging.</p>
+                    <div class="network-stats">
+                        <span>1,500+ Stations</span>
+                        <span>Urban & Highway</span>
+                    </div>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>ChargeZone</h3>
+                    <p>Comprehensive charging solutions with focus on destination charging at malls and hotels.</p>
+                    <div class="network-stats">
+                        <span>1,000+ Stations</span>
+                        <span>Destination Charging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-route"></i>
+                        <span>NomadWander</span>
+                    </div>
+                    <p>Discover the unexplored paths and hidden gems of India with our comprehensive travel companion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="route-planner.html">Plan Route</a></li>
+                        <li><a href="hidden-destinations.html">Hidden Gems</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NomadWander. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
